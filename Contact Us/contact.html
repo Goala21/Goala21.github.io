@@ -1,31 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact us</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"> -->
+  <title>Contact us</title>
 </head>
+
 <body>
-    <h2 class="main">Contact us</h1>
+  <h2 class="main">Contact us</h1>
 
     <!-- This is for the navbar-->
-    
-        <!-- Contact section-->
 
-    <section class="Container">
-        <div class="contact-us">    
-        </p class="Name">Name</p>
-        <input type="text" class="Name" placeholder="Your name">
-        
-        <p class="Surname">Surname</p>
-        <input type="text" class="LastName" placeholder="Your Surname">
-        
-        <p class="Number">Contact Number</p>
-        <input type="tel" id="Phone" name="Phone" maxlength="8" pattern="[0-9] {8}" class="Phone number" placeholder="Enter Contact Number">
+    <!-- <div class="container text-center"></div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Our previous work</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Buy a service</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Quiz</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Select a page</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>     -->
 
-        <p class="textarea">Message:</p>
-        <textarea class="text-area" placeholder="Insert message here"></textarea>
-        <div>
-    <section>
+    <!-- Contact section-->
+      <form class="Container">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <div class="contact-us">
+            <label for="Name">Firstname: </label>
+            <input type="text" class="Name" placeholder="Your name">
+            <label for="LastName"> Surname:</label>
+            <input type="text" class="LastName" placeholder="Your Surname">
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Contact Details</legend>
+          <label for="Phone number"> Contact number: </label>
+          <input type="tel" id="Phone" name="Phone" maxlength="8" pattern="[0-9]{8}" class="Phone number" placeholder="Enter Contact Number" inputmode="numeric">
+        </fieldset>
+        <fieldset>
+          <legend>Message Details</legend>
+          <label for="subject">Subject: </label>
+          <input type="text" class="subject" placeholder="Insert subject here:">
+          <p class="textarea">Message:</p>
+          <textarea class="text-area" rows="20" cols="100" placeholder="Insert message here"></textarea>
+        </fieldset>
+          <button><a href="mailto:someone@example.com">Send email</a></button>
+    </form>
+  
 </body>
+
 </html>
