@@ -6,6 +6,8 @@
     <title>Quiz</title>
     <link rel="stylesheet" href="quiz.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="quiz.js"></script>
+
 </head>
 <body>
     <!-- Navbar -->
@@ -50,9 +52,9 @@
   <div class="list-group">
     <h3 class="question">What is the main purpose of video editing?</h3>
     <ul class="choices">
-      <button type="button" class="list-group-item list-group-item-action mt-3 border border-dark rounded">Adding subtitles to a video</button>
-      <button type="button" class="list-group-item list-group-item-action mt-1 border border-dark rounded">Adjusting colours to create a specific look or mood</button>
-      <button type="button" class="list-group-item list-group-item-action mt-1 border border-dark rounded">Making the video file smaller</button>
+      <option value="correct1" type="button" class="list-group-item list-group-item-action mt-3 border border-dark rounded" id="correct_answer1">Adding subtitles to a video</option>
+      <option type="button" class="list-group-item list-group-item-action mt-1 border border-dark rounded" id="wrong_answer">Adjusting colours to create a specific look or mood</option>
+      <option type="button" class="list-group-item list-group-item-action mt-1 border border-dark rounded" id="wrong_answer">Making the video file smaller</option>
     </ul>
   </div>
     </section>
@@ -60,9 +62,9 @@
   <div class="list-group">
     <h3 class="question">What is the main purpose of video editing?</h3>
     <ul class="choices">
-      <button type="button" class="list-group-item list-group-item-action mt-3 border border-dark rounded">Adding subtitles to a video</button>
-      <button type="button" class="list-group-item list-group-item-action mt-1 border border-dark rounded">Adjusting colours to create a specific look or mood</button>
-      <button type="button" class="list-group-item list-group-item-action mt-1 border border-dark rounded">Making the video file smaller</button>
+      <option type="button" class="list-group-item list-group-item-action mt-3 border border-dark rounded" id="wrong_answer">Adding subtitles to a video</option>
+      <option  value="correct2" type="button" class="list-group-item list-group-item-action mt-1 border border-dark rounded"id="correct_answer2">Adjusting colours to create a specific look or mood</option>
+      <option type="button" class="list-group-item list-group-item-action mt-1 border border-dark rounded" id="wrong_answer">Making the video file smaller</option>
     </ul>
   </div>
     </section>
@@ -70,9 +72,9 @@
   <div class="list-group">
     <h3 class="question">What is the main purpose of video editing?</h3>
     <ul class="choices">
-      <button type="button" class="list-group-item list-group-item-action mt-3 border border-dark rounded">Adding subtitles to a video</button>
-      <button type="button" class="list-group-item list-group-item-action mt-1 border border-dark rounded">Adjusting colours to create a specific look or mood</button>
-      <button type="button" class="list-group-item list-group-item-action mt-1 border border-dark rounded">Making the video file smaller</button>
+      <option   type="button" class="list-group-item list-group-item-action mt-3 border border-dark rounded" id="wrong_answer">Adding subtitles to a video</option>
+      <option value="correct3" type="button" class="list-group-item list-group-item-action mt-1 border border-dark rounded" id="correct_answer3">Adjusting colours to create a specific look or mood</option>
+      <option type="button" class="list-group-item list-group-item-action mt-1 border border-dark rounded" id="wrong_answer">Making the video file smaller</option>
     </ul>
   </div>
     </section>
@@ -80,13 +82,12 @@
   <div class="list-group">
     <h3 class="question">What is the main purpose of video editing?</h3>
     <ul class="choices">
-      <button type="button" class="list-group-item list-group-item-action mt-3 border border-dark rounded">Adding subtitles to a video</button>
-      <button type="button" class="list-group-item list-group-item-action mt-1 border border-dark rounded">Adjusting colours to create a specific look or mood</button>
-      <button type="button" class="list-group-item list-group-item-action mt-1 border border-dark rounded">Making the video file smaller</button>
+      <option   type="button" class="list-group-item list-group-item-action mt-3 border border-dark rounded" id="wrong_answer">Adding subtitles to a video</option>
+      <option type="button" class="list-group-item list-group-item-action mt-1 border border-dark rounded" id="wrong_answer">Adjusting colours to create a specific look or mood</option>
+      <option value="correct4" type="button" class="list-group-item list-group-item-action mt-1 border border-dark rounded" id="correct_answer4">Making the video file smaller</option>
     </ul>
   </div>
-  </section>
-<script>
 
-</script>
+  <button onclick="points()">Submit</button>
+  </section>
 </html>
