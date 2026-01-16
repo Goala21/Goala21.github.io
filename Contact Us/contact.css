@@ -7,16 +7,15 @@ body{
 }
 
 .text-area{
-    min-height: 50px;
-    max-width: 100px;
-    height: 200px;
-    width: 500px;
+    min-height: 50px !important;
+    max-width: 1000px !important;
+    height: 200px !important;
+    width: 500px !important;
+    font-size: 10px !important;
 }
 .contact-us{
-    text-align: center !important;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    border: 10px;
+    grid-template-columns: 1fr 1fr !important;
+    border: 10px !important;
     
 }
 
