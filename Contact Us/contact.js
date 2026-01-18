@@ -15,3 +15,8 @@ function checkinginput(event){
 
 
 }
+
+
+function onlyNumbers(input) {
+    input.value = input.value.replace(/[^0-9]/g, '');
+}
