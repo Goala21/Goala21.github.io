@@ -172,12 +172,12 @@ body{
 }
 
 .button{
-    text-align: center;
+    text-align: center !important;
     padding-left: 20px;
-    margin-top: 20px;
-    min-height: 50pssx;
-    display: flex;
-    justify-content: center;
+    margin-top: 20px !;
+    min-height: 50px !;
+    display: flex !;
+    justify-content: center !important;
 
 }
 
