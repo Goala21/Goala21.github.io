@@ -1,3 +1,4 @@
+You can view the website here: https://goala21.github.io/
 This project is a multi page portolio where the host is a video editor presenting his previous work to potential clients.
 
 
