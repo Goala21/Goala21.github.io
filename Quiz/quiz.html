@@ -51,7 +51,7 @@
   <div class="list-group">
     <h3 class="question">What is the main purpose of video editing?</h3>
     <ul class="choices">
-      <button value="correct1" type="button" class="list-group-item list-group-item-action mt-3 border border-dark rounded" id="correct_answer1">Adding subtitles to a video</button>
+      <button value="correct1" type="button" class="list-group-item list-group-item-action mt-3 border border-dark rounded" id="correct_answer1">To make the video accessible and easier to understand</button>
       <button type="button" class="list-group-item list-group-item-action mt-1 border border-dark rounded" id="wrong_answer1">Adjusting colours to create a specific look or mood</button>
       <button type="button" class="list-group-item list-group-item-action mt-1 border border-dark rounded" id="wrong_answer2">Making the video file smaller</button>
     </ul>
@@ -59,31 +59,31 @@
     </section>
     <section class="question2 mt-5">
   <div class="list-group">
-    <h3 class="question">What is the main purpose of video editing?</h3>
+    <h3 class="question">What does colour grading mainly affect in a video?</h3>
     <ul class="choices">
-      <button type="button" class="list-group-item list-group-item-action mt-3 border border-dark rounded" id="wrong_answer3">Adding subtitles to a video</button>
-      <button  value="correct2" type="button" class="list-group-item list-group-item-action mt-1 border border-dark rounded"id="correct_answer2">Adjusting colours to create a specific look or mood</button>
-      <button type="button" class="list-group-item list-group-item-action mt-1 border border-dark rounded" id="wrong_answer4">Making the video file smaller</button>
+      <button type="button" class="list-group-item list-group-item-action mt-3 border border-dark rounded" id="wrong_answer3">Audio quality</button>
+      <button  value="correct2" type="button" class="list-group-item list-group-item-action mt-1 border border-dark rounded"id="correct_answer2">Mood and visual style</button>
+      <button type="button" class="list-group-item list-group-item-action mt-1 border border-dark rounded" id="wrong_answer4">Video resolution</button>
     </ul>
   </div>
     </section>
     <section class="question3 mt-5">
   <div class="list-group">
-    <h3 class="question">What is the main purpose of video editing?</h3>
+    <h3 class="question">What is video trimming used for?</h3>
     <ul class="choices">
-      <button   type="button" class="list-group-item list-group-item-action mt-3 border border-dark rounded" id="wrong_answer5">Adding subtitles to a video</button>
-      <button value="correct3" type="button" class="list-group-item list-group-item-action mt-1 border border-dark rounded" id="correct_answer3">Adjusting colours to create a specific look or mood</button>
-      <button type="button" class="list-group-item list-group-item-action mt-1 border border-dark rounded" id="wrong_answer6">Making the video file smaller</button>
+      <button   type="button" class="list-group-item list-group-item-action mt-3 border border-dark rounded" id="wrong_answer5">Adding special effects</button>
+      <button value="correct3" type="button" class="list-group-item list-group-item-action mt-1 border border-dark rounded" id="correct_answer3">Removing unwanted parts of a clip</button>
+      <button type="button" class="list-group-item list-group-item-action mt-1 border border-dark rounded" id="wrong_answer6">Increasing frame rate</button>
     </ul>
   </div>
     </section>
   <section class="question3 mt-5">
   <div class="list-group">
-    <h3 class="question">What is the main purpose of video editing?</h3>
+    <h3 class="question">What is the purpose of adding subtitles to a video?</h3>
     <ul class="choices">
-      <button   type="button" class="list-group-item list-group-item-action mt-3 border border-dark rounded" id="wrong_answer7">Adding subtitles to a video</button>
-      <button type="button" class="list-group-item list-group-item-action mt-1 border border-dark rounded" id="wrong_answer8">Adjusting colours to create a specific look or mood</button>
-      <button value="correct4" type="button" class="list-group-item list-group-item-action mt-1 border border-dark rounded" id="correct_answer4">Making the video file smaller</button>
+      <button   type="button" class="list-group-item list-group-item-action mt-3 border border-dark rounded" id="wrong_answer7">To improve video resolution</button>
+      <button type="button" class="list-group-item list-group-item-action mt-1 border border-dark rounded" id="wrong_answer8">To reduce background noise</button>
+      <button value="correct4" type="button" class="list-group-item list-group-item-action mt-1 border border-dark rounded" id="correct_answer4">To make the video accessible and easier to understand</button>
     </ul>
   </div>
   <div class="text-center mt-5">
@@ -100,114 +100,102 @@
   const correctAnswers = ['correct_answer1', 'correct_answer2', 'correct_answer3', 'correct_answer4'];
 
   document.getElementById("correct_answer1").onclick = function() {
-    alert("Correct answer 1");
     score = score + 1;
     this.style.backgroundColor = "#A9A9A9";
     this.disabled = true;
     document.getElementById("wrong_answer1" ).disabled = true; 
     document.getElementById("wrong_answer2" ).disabled = true;
-    console.log("+1 Point added currect score: " + score);
+    console.log("+1 Point added current score: " + score);
 };
 
   document.getElementById("correct_answer2").onclick = function() {
-    alert("Correct answer 2");
     score = score + 1;
     this.style.backgroundColor = "#A9A9A9"; 
     this.disabled = true;
     document.getElementById("wrong_answer3" ).disabled = true; 
     document.getElementById("wrong_answer4" ).disabled = true;
-    console.log("+1 Point added currect score: " + score);
+    console.log("+1 Point added current score: " + score);
 };  
 
   document.getElementById("correct_answer3").onclick = function() {
-    alert("Correct answer 3");
     score = score + 1;
     this.style.backgroundColor = "#A9A9A9";
     this.disabled = true;
     document.getElementById("wrong_answer5" ).disabled = true; 
     document.getElementById("wrong_answer6" ).disabled = true;
-    console.log("+1 Point added currect score: " + score); 
+    console.log("+1 Point added current score: " + score); 
 };
 
   document.getElementById("correct_answer4").onclick = function() {
-    alert("Correct answer 4");
     score = score + 1;
     this.style.backgroundColor = "#A9A9A9";
     this.disabled = true; 
     document.getElementById("wrong_answer7" ).disabled = true; 
     document.getElementById("wrong_answer8" ).disabled = true;
-    console.log("+1 Point added currect score: " + score);
+    console.log("+1 Point added current score: " + score);
 };
 
   document.getElementById("wrong_answer1").onclick = function() {
-    alert("wrong_answer1");
     this.style.backgroundColor = "#A9A9A9";
     this.disabled = true; 
     document.getElementById("wrong_answer2" ).disabled = true; 
     document.getElementById("correct_answer1" ).disabled = true;
-    console.log("Wrong Answer currect score: " + score );
+    console.log("Wrong Answer current score: " + score );
 };
 
   document.getElementById("wrong_answer2").onclick = function() {
-    alert("wrong_answer2");
     this.style.backgroundColor = "#A9A9A9";
     this.disabled = true; 
     document.getElementById("wrong_answer1" ).disabled = true; 
     document.getElementById("correct_answer1" ).disabled = true;
-    console.log("Wrong Answer currect score: " + score );
+    console.log("Wrong Answer current score: " + score );
 };
 
   document.getElementById("wrong_answer3").onclick = function() {
-    alert("wrong_answer3");
     this.style.backgroundColor = "#A9A9A9";
     this.disabled = true; 
     document.getElementById("wrong_answer4" ).disabled = true; 
     document.getElementById("correct_answer2" ).disabled = true;
-    console.log("Wrong Answer currect score: " + score );
+    console.log("Wrong Answer current score: " + score );
 };
 
   document.getElementById("wrong_answer4").onclick = function() {
-    alert("wrong_answer4");
     this.style.backgroundColor = "#A9A9A9";
     this.disabled = true; 
     document.getElementById("wrong_answer3" ).disabled = true; 
     document.getElementById("correct_answer2" ).disabled = true;
-    console.log("Wrong Answer currect score: " + score );
+    console.log("Wrong Answer current score: " + score );
 };
 
   document.getElementById("wrong_answer5").onclick = function() {
-    alert("wrong_answer5");
     this.style.backgroundColor = "#A9A9A9";
     this.disabled = true; 
     document.getElementById("wrong_answer6" ).disabled = true; 
     document.getElementById("correct_answer3" ).disabled = true;
-    console.log("Wrong Answer currect score: " + score );
+    console.log("Wrong Answer current score: " + score );
 };
 
   document.getElementById("wrong_answer6").onclick = function() {
-    alert("wrong_answer6");
     this.style.backgroundColor = "#A9A9A9";
     this.disabled = true; 
     document.getElementById("wrong_answer5" ).disabled = true; 
     document.getElementById("correct_answer3" ).disabled = true;
-};  console.log("Wrong Answer currect score: " + score );
+};  console.log("Wrong Answer current score: " + score );
 
   document.getElementById("wrong_answer7").onclick = function() {
-    alert("wrong_answer7");
     this.style.backgroundColor = "#A9A9A9";
     this.disabled = true; 
     document.getElementById("wrong_answer7" ).disabled = true; 
     document.getElementById("correct_answer4" ).disabled = true;
-    console.log("Wrong Answer currect score: " + score );
+    console.log("Wrong Answer current score: " + score );
 };
 
   document.getElementById("wrong_answer8").onclick = function() {
-    alert("wrong_answer8");
     this.style.backgroundColor = "#A9A9A9";
     this.disabled = true; 
     document.getElementById("wrong_answer7" ).disabled = true; 
     document.getElementById("correct_answer4" ).disabled = true;
-    console.log("Wrong Answer currect score: " + score );
+    console.log("Wrong Answer current score: " + score );
 };
 
 // This function will check if the person has clicked on all 4 correct answers and gives them an alert if they did it correct or not
