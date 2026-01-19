@@ -50,3 +50,20 @@ body{
 .About-me-title{
     color: white;
 }
+
+.top_videos{
+    display: flex !important;
+    justify-content: center !important;
+    gap: 30px !important;
+    height: 500px !important;
+    
+    
+}
+
+.videos{
+    display: flex !important;
+    justify-content: center !important;
+    gap: 30px !important;
+    height: 200 !important;
+    margin-bottom: 5000px !important;
+}
